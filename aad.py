@@ -19,7 +19,7 @@ def random_str():
 
 
 def get_ms_token(username, password, tenant):
-    url = "https://login.microsoftonline.com/common/oauth2/token"
+    url = "https://login.microsoftonline.com/" + tenant + "/oauth2/token"
     header = {
         "Content-Type": "application/x-www-form-urlencoded "
     }
